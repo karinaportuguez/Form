@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Formulario </title>
+</head>
+
+<body>
+  <form action="" method="POST" id="form">
+    <section class="form-register">
+      <h3>Formulario de validacion</h3>
+      <!-- required -->
+      <input type="text" class="inp" name="nombre" id="nombre" placeholder="Ingrese su nombre" required />
+      <input type="text" class="inp" name="apellidoPaterno" id="apellidoPaterno"
+        placeholder="Ingrese su apellido paterno" required />
+      <input type="text" class="inp" name="apellidoMaterno" id="apellidoMaterno"
+        placeholder="Ingrese su apellido materno" required />
+      <input type="number" class="inp" name="edad" id="edad" placeholder="Ingrese su edad" />
+      <input type="date" class="inp" name="fechaNacimiento" id="fechaNacimiento"
+        placeholder="Ingrese su fecha de nacimiento" required />
+      <input type="text" class="inp rfc" name="rfc" id="rfc1" placeholder="Ingrese su rfc" />
+      <input type="text" class="inp rfc" name="rfc" id="rfc2" placeholder="Ingrese su rfc" />
+
+      <input type="submit" class="btn" value="Validar">
+      <p class="warnings" id="warnings"></p>
+    </section>
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
